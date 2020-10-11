@@ -12,7 +12,7 @@ public class AlgorithmVisualizer {
     public AlgorithmVisualizer(){
         array = new int[50];
         fillArray();
-        algorithmFrame = new AlgorithmFrame(array);
+        algorithmFrame = new AlgorithmFrame(array, getSortAlgorithm());
 
     }
 
