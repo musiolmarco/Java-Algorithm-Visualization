@@ -1,3 +1,5 @@
+import java.util.function.Function;
+
 public class Main {
 
     // main method for testing
