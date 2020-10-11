@@ -7,7 +7,7 @@ public class AlgorithmVisualizer {
     public AlgorithmVisualizer(){
         array = new int[50];
         fillArray();
-        algorithmFrame = new AlgorithmFrame();
+        algorithmFrame = new AlgorithmFrame(array);
 
     }
 
