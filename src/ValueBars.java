@@ -29,6 +29,12 @@ public class ValueBars extends JPanel {
             x += 10;
         }
 
+        g.setColor(Color.WHITE);
+
+        JLabel jLabel = new JLabel("Press 'Enter' to sort");
+        jLabel.setVisible(true);
+        add(jLabel);
+
         repaint();
     }
 
