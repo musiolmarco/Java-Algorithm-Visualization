@@ -34,3 +34,4 @@ whenever your values are changing. I would recommend a value between 20-50.
 
 ## Have fun!
 Now, this is it. Enjoy your little animaition and maybe some updates in the future!
+![gif](https://media1.giphy.com/media/11AoJkCM1rwqilQIKB/giphy.gif)
