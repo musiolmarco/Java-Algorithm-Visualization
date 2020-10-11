@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class AlgorithmFrame extends JFrame {
 
@@ -7,7 +6,7 @@ public class AlgorithmFrame extends JFrame {
 
     public AlgorithmFrame(int width, int height){
 
-        setLayout(new FlowLayout());
+        setLayout(null);
         setVisible(true);
         setSize(width,height);
 
