@@ -1,3 +1,5 @@
+package com.marcomsl.algorithmvisualization;
+
 import java.util.ArrayList;
 import java.util.Random;
 

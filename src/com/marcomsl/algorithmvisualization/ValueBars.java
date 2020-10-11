@@ -1,3 +1,5 @@
+package com.marcomsl.algorithmvisualization;
+
 import javax.swing.*;
 import java.awt.*;
 
