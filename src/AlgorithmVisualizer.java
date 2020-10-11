@@ -13,7 +13,7 @@ public class AlgorithmVisualizer {
 
     private void fillArray(){
         for(int i = 0; i < array.length; i++){
-            array[i] = (i + 10) * 7;
+            array[i] = (i + 5) * 7;
         }
     }
 
