@@ -14,7 +14,7 @@ public class AlgorithmVisualizer {
 
     private void fillArray(){
         for(int i = 0; i < array.length; i++){
-            array[i] = i;
+            array[i] = i * 3;
         }
     }
 

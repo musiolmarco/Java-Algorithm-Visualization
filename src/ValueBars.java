@@ -5,6 +5,7 @@ public class ValueBars extends JPanel {
 
     int array[];
 
+
     public ValueBars(int[] array){
 
         this.array = array;
@@ -18,7 +19,15 @@ public class ValueBars extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-        
+
+        int x = 0;
+        g.setColor(Color.WHITE);
+
+        for(int i = 0; i < array.length; i++){
+            g.drawRect(x + 1, 0, 1, array[i]);
+
+            x += 4.8;
+        }
 
         repaint();
     }
