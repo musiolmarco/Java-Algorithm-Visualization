@@ -7,12 +7,11 @@ public class AlgorithmVisualizer {
 
     private int[] array;
     private ArrayList<Integer> arrayList = new ArrayList<>();
-    private int[] sortAlgorithm;
 
     public AlgorithmVisualizer(){
         array = new int[50];
         fillArray();
-        algorithmFrame = new AlgorithmFrame(array, getSortAlgorithm());
+        algorithmFrame = new AlgorithmFrame(array);
 
     }
 
@@ -36,13 +35,5 @@ public class AlgorithmVisualizer {
 
     public ArrayList<Integer> getArrayList() {
         return arrayList;
-    }
-
-    public int[] getSortAlgorithm() {
-        return sortAlgorithm;
-    }
-
-    public void setSortAlgorithm(int[] sortAlgorithm) {
-        this.sortAlgorithm = sortAlgorithm;
     }
 }
