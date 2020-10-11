@@ -15,7 +15,7 @@ public class AlgorithmFrame extends JFrame {
         setLayout(null);
         setVisible(true);
         setTitle("Sorting Algorithm Visualization - Marco Musiol");
-        setIconImage(new ImageIcon("src/icon.png").getImage());
+        setIconImage(new ImageIcon("assets/icon.png").getImage());
         setBackground(Color.BLACK);
         setSize(size, size);
 
