@@ -5,15 +5,15 @@ public class AlgorithmFrame extends JFrame {
 
 
 
-    public AlgorithmFrame(int width, int height, int[] array){
+    public AlgorithmFrame(int[] array){
 
         setLayout(null);
         setVisible(true);
         setBackground(Color.BLACK);
-        setSize(width,height);
+        setSize(array.length * 10 + 10,array.length * 10 + 10);
 
         ValueBars valueBars = new ValueBars(array);
-        valueBars.setBounds(0,0,width,height);
+        valueBars.setBounds(0,0,array.length * 10 + 10,array.length * 10 + 10);
         valueBars.setVisible(true);
         valueBars.setBackground(Color.BLACK);
         add(valueBars);

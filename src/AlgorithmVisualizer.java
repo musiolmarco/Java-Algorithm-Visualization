@@ -4,17 +4,16 @@ public class AlgorithmVisualizer {
 
     int[] array;
 
-    public AlgorithmVisualizer(int width, int height){
-        array = new int[100];
+    public AlgorithmVisualizer(){
+        array = new int[50];
         fillArray();
-        algorithmFrame = new AlgorithmFrame(width, height, array);
+        algorithmFrame = new AlgorithmFrame();
 
-        System.out.println(array[59]);
     }
 
     private void fillArray(){
         for(int i = 0; i < array.length; i++){
-            array[i] = i * 3;
+            array[i] = (i + 10) * 7;
         }
     }
 
