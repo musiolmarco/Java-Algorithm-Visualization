@@ -30,7 +30,7 @@ You can easily just add
 ```
 Thread.sleep(30);
 ```
-whenever your values are changing. I would recommend a value between 20-50.
+whenever your values are changing. I would recommend a value between 10-25.
 
 ## Have fun!
 Now, this is it. Enjoy your little animaition and maybe some updates in the future!
