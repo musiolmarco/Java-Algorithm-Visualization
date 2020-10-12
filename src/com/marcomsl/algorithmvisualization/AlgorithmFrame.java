@@ -17,13 +17,13 @@ public class AlgorithmFrame extends JFrame {
         setResizable(false);
         setTitle("Sorting Algorithm Visualization - Marco Musiol");
         setIconImage(new ImageIcon("assets/icon.png").getImage());
-        setBackground(Color.BLACK);
+        setBackground(Color.DARK_GRAY);
         setSize(size, size);
 
         ValueBars valueBars = new ValueBars(array, size);
         valueBars.setBounds(0,0,size, size);
         valueBars.setVisible(true);
-        valueBars.setBackground(Color.BLACK);
+        valueBars.setBackground(Color.DARK_GRAY);
         add(valueBars);
 
 

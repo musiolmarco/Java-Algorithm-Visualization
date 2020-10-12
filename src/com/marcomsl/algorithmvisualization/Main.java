@@ -6,9 +6,9 @@ public class Main {
     // main function for testing
     public static void main(String[] args) throws InterruptedException {
         AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer();
-        algorithmVisualizer.bubblesort();
+        algorithmVisualizer.bubblesort(15);
         algorithmVisualizer.resetArray();
-        algorithmVisualizer.bubblesort();
+        algorithmVisualizer.bubblesort(15);
     }
 
 
