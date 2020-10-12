@@ -35,7 +35,4 @@ public class AlgorithmVisualizer {
         return array;
     }
 
-    public ArrayList<Integer> getArrayList() {
-        return arrayList;
-    }
 }

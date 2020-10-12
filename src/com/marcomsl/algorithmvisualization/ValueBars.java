@@ -6,11 +6,13 @@ import java.awt.*;
 public class ValueBars extends JPanel {
 
     int array[];
+    int size;
 
 
-    public ValueBars(int[] array){
+    public ValueBars(int[] array, int size){
 
         this.array = array;
+        this.size = size;
 
     }
 
@@ -26,7 +28,7 @@ public class ValueBars extends JPanel {
         g.setColor(Color.WHITE);
 
         for(int i = 0; i < array.length; i++){
-            g.fillRect(x + 1, 500 - array[i], 10, array[i]);
+            g.fillRect(x + 1, size - 35 - array[i], 10, array[i]);
 
             x += 10;
         }
