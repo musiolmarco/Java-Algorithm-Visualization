@@ -35,4 +35,18 @@ public class AlgorithmVisualizer {
         return array;
     }
 
+    public void bubblesort() throws InterruptedException {
+        int temp;
+        for(int x = 1; x < array.length; x++){
+            for (int b = 0; b < array.length - x; b++) {
+                if (array[b] > array[b + 1]) {
+                    Thread.sleep(10);
+                    temp = array[b];
+                    array[b] = array[b + 1];
+                    array[b + 1] = temp;
+                }
+            }
+        }
+    }
+
 }
