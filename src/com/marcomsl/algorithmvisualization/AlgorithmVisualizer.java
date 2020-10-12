@@ -19,7 +19,7 @@ public class AlgorithmVisualizer {
 
     private void fillArray(){
         for(int i = 0; i < array.length; i++){
-            arrayList.add((i + 5) * 7);
+            arrayList.add ((i + 1) * 6);
         }
 
         Random random = new Random();

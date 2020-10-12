@@ -10,10 +10,11 @@ public class AlgorithmFrame extends JFrame {
 
     public AlgorithmFrame(int[] array){
 
-        size = array.length * 10 + 30;
+        size = array.length * 10 + 10;
 
         setLayout(null);
         setVisible(true);
+        setResizable(false);
         setTitle("Sorting Algorithm Visualization - Marco Musiol");
         setIconImage(new ImageIcon("assets/icon.png").getImage());
         setBackground(Color.BLACK);
