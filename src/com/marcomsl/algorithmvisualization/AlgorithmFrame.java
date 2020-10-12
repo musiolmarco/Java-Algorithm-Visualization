@@ -15,15 +15,15 @@ public class AlgorithmFrame extends JFrame {
         setLayout(null);
         setVisible(true);
         setResizable(false);
-        setTitle("Sorting Algorithm Visualization - Marco Musiol");
+        setTitle("Sorting Algorithm Visualization");
         setIconImage(new ImageIcon("assets/icon.png").getImage());
-        setBackground(Color.DARK_GRAY);
+        setBackground(Color.WHITE);
         setSize(size, size);
 
         ValueBars valueBars = new ValueBars(array, size);
         valueBars.setBounds(0,0,size, size);
         valueBars.setVisible(true);
-        valueBars.setBackground(Color.DARK_GRAY);
+        valueBars.setBackground(Color.WHITE);
         add(valueBars);
 
 
