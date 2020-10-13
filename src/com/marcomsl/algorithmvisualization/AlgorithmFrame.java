@@ -15,6 +15,7 @@ public class AlgorithmFrame extends JFrame {
         setLayout(null);
         setVisible(true);
         setResizable(false);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Sorting Algorithm Visualization");
         setIconImage(new ImageIcon("assets/icon.png").getImage());
         setBackground(Color.WHITE);
