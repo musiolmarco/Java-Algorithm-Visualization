@@ -94,7 +94,7 @@ public class AlgorithmVisualizer {
             array[highestIndex] = array[i];
             array[i] = tempValue;
         }
-        
+
     }
 
 

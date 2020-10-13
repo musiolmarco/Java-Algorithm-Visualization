@@ -28,7 +28,10 @@ public class ValueBars extends JPanel {
         g.setColor(Color.WHITE);
 
         for(int i = 0; i < array.length; i++){
-            g.setColor(new Color(0,array[i] / 2,0));
+            if(array[i] <= 255 && array[i] >= 0){
+                g.setColor(new Color(0,array[i] / 2,0));
+            }
+
             g.fillRect(x , size - 60 - array[i], 10, array[i] + 30);
 
             x += 10;
