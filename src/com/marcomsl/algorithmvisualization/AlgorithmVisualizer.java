@@ -2,6 +2,7 @@ package com.marcomsl.algorithmvisualization;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Timer;
 
 public class AlgorithmVisualizer {
 
@@ -10,17 +11,17 @@ public class AlgorithmVisualizer {
     private int[] array;
     private ArrayList<Integer> arrayList = new ArrayList<>();
 
-    public AlgorithmVisualizer(){
+    public AlgorithmVisualizer() {
         array = new int[50];
         fillArray();
         algorithmFrame = new AlgorithmFrame(array);
 
     }
 
-    public AlgorithmVisualizer(int size){
-        if(size >= 25 && size <= 50) {
+    public AlgorithmVisualizer(int size) {
+        if (size >= 25 && size <= 50) {
             array = new int[size];
-        }else{
+        } else {
             array = new int[50];
         }
         fillArray();
@@ -28,14 +29,14 @@ public class AlgorithmVisualizer {
 
     }
 
-    private void fillArray(){
-        for(int i = 0; i < array.length; i++){
-            arrayList.add ((i + 1) * 6);
+    private void fillArray() {
+        for (int i = 0; i < array.length; i++) {
+            arrayList.add((i + 1) * 6);
         }
 
         Random random = new Random();
 
-        for(int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             int randomIndex = random.nextInt(arrayList.size());
             array[i] = arrayList.get(randomIndex);
             arrayList.remove(randomIndex);
@@ -46,13 +47,13 @@ public class AlgorithmVisualizer {
         return array;
     }
 
-    public void resetArray(){
+    public void resetArray() {
         fillArray();
     }
 
     public void bubblesort(int animationSpeed) throws InterruptedException {
         int temp;
-        for(int x = 1; x < array.length; x++){
+        for (int x = 1; x < array.length; x++) {
             for (int b = 0; b < array.length - x; b++) {
                 if (array[b] > array[b + 1]) {
                     Thread.sleep(animationSpeed);
@@ -61,6 +62,20 @@ public class AlgorithmVisualizer {
                     array[b + 1] = temp;
                 }
             }
+        }
+    }
+
+    public void insertionSort(int animationSpeed) throws InterruptedException {
+        int temp;
+        for (int i = 1; i < array.length; i++) {
+            temp = array[i];
+            int j = i;
+            while (j > 0 && array[j - 1] > temp) {
+                Thread.sleep(animationSpeed);
+                array[j] = array[j - 1];
+                j--;
+            }
+            array[j] = temp;
         }
     }
 
