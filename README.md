@@ -1,5 +1,5 @@
 # Java-Algorithm-Visualization
-![GitHub Logo](/assets/icon.png)
+![Banner](/assets/Banner.png)
 
 A library to visualize your algorithms in Java.
 
@@ -38,6 +38,7 @@ AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(int size, BarC
 ## BarColor
 You can change the bar colors by passing the 'BarColor' to the constructor, like explained above. These are the available colors:
 ##### BarColor.RED, BarColor.GREEN, BarColor.BLUE
+![Colors](/assets/Colors.png)
 
 ## Animation
 Now you actually 'connected' your algorithm with the library, but you actually should add a 'delay' after every operation in your algorithm, because otherwise your algorithm would be sorted instantly.
