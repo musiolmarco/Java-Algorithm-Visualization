@@ -10,11 +10,20 @@ public class AlgorithmVisualizer {
 
     private int[] array;
     private ArrayList<Integer> arrayList = new ArrayList<>();
+    private BarColor barColor;
 
     public AlgorithmVisualizer() {
         array = new int[50];
         fillArray();
-        algorithmFrame = new AlgorithmFrame(array);
+        algorithmFrame = new AlgorithmFrame(array, barColor);
+
+    }
+
+    public AlgorithmVisualizer(BarColor barColor) {
+        this.barColor = barColor;
+        array = new int[50];
+        fillArray();
+        algorithmFrame = new AlgorithmFrame(array, barColor);
 
     }
 
@@ -25,7 +34,21 @@ public class AlgorithmVisualizer {
             array = new int[50];
         }
         fillArray();
-        algorithmFrame = new AlgorithmFrame(array);
+        algorithmFrame = new AlgorithmFrame(array, barColor);
+
+    }
+
+    public AlgorithmVisualizer(int size, BarColor barColor) {
+        if (size >= 25 && size <= 50) {
+            array = new int[size];
+        } else {
+            array = new int[50];
+        }
+
+        this.barColor = barColor;
+
+        fillArray();
+        algorithmFrame = new AlgorithmFrame(array, barColor);
 
     }
 

@@ -8,7 +8,7 @@ public class AlgorithmFrame extends JFrame {
     int size;
 
 
-    public AlgorithmFrame(int[] array){
+    public AlgorithmFrame(int[] array, BarColor barColor){
 
         size = array.length * 10 + 16;
 
@@ -20,7 +20,7 @@ public class AlgorithmFrame extends JFrame {
         setBackground(Color.WHITE);
         setSize(size, size);
 
-        ValueBars valueBars = new ValueBars(array, size);
+        ValueBars valueBars = new ValueBars(array, size, barColor);
         valueBars.setBounds(0,0,size, size);
         valueBars.setVisible(true);
         valueBars.setBackground(Color.WHITE);
