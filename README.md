@@ -24,14 +24,15 @@ bubblesort(algorithmVisualizer.getArray());
 ```
 
 #### Other constructors
+
 ```
 AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(BarColor barColor);
 ```
 ```
-AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(int size);
+AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(int size); // you can choose an array size between 25-50
 ```
 ```
-AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(int size, BarColor barColor);
+AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(int size, BarColor barColor); // you can choose an array size between 25-50
 ```
 
 ## BarColor
