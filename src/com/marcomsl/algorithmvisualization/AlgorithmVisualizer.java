@@ -17,6 +17,17 @@ public class AlgorithmVisualizer {
 
     }
 
+    public AlgorithmVisualizer(int size){
+        if(size >= 25 && size <= 50) {
+            array = new int[size];
+        }else{
+            array = new int[50];
+        }
+        fillArray();
+        algorithmFrame = new AlgorithmFrame(array);
+
+    }
+
     private void fillArray(){
         for(int i = 0; i < array.length; i++){
             arrayList.add ((i + 1) * 6);

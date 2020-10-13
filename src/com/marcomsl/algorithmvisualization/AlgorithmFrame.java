@@ -10,7 +10,7 @@ public class AlgorithmFrame extends JFrame {
 
     public AlgorithmFrame(int[] array){
 
-        size = array.length * 10 + 10;
+        size = array.length * 10 + 17;
 
         setLayout(null);
         setVisible(true);
