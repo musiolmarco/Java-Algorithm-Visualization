@@ -79,5 +79,23 @@ public class AlgorithmVisualizer {
         }
     }
 
+    public void selectionSort(int animationSpeed) throws InterruptedException {
+        int highestIndex, tempValue;
+        for (int i = array.length - 1; i >= 0; i--) {
+            highestIndex = i;
+            for (int j = 0; j <= i; j++) {
+                if (array[j] > array[highestIndex]) {
+                    highestIndex = j;
+                }
+            }
+
+            Thread.sleep(animationSpeed);
+            tempValue = array[highestIndex];
+            array[highestIndex] = array[i];
+            array[i] = tempValue;
+        }
+        
+    }
+
 
 }

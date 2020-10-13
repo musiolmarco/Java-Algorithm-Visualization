@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         
         AlgorithmVisualizer algorithmVisualizer = new AlgorithmVisualizer(50);
-        algorithmVisualizer.insertionSort(25);
+        algorithmVisualizer.selectionSort(100);
         algorithmVisualizer.resetArray();
         algorithmVisualizer.bubblesort(15);
     }
