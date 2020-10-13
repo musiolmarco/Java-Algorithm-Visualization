@@ -26,8 +26,13 @@ public class ValueBars extends JPanel {
 
         g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
+        if(barColor == null){
+            g.setColor(Color.BLACK);
+            g.fillRect(0,0,size,size);
+        }
+
+
         int x = 0;
-        g.setColor(Color.WHITE);
 
         for(int i = 0; i < array.length; i++){
             if(array[i] / 2<= 255 && array[i] / 2 >= 0){
@@ -39,11 +44,11 @@ public class ValueBars extends JPanel {
                 }else if(barColor == BarColor.BLUE){
                     g.setColor(new Color(0,0,array[i] / 2));
                 }else{
-                    g.setColor(Color.BLACK);
+                    g.setColor(Color.WHITE);
                 }
 
             }else{
-                g.setColor(Color.BLACK);
+                g.setColor(Color.WHITE);
             }
 
             g.fillRect(x , size - 60 - array[i], 10, array[i] + 30);
@@ -52,6 +57,8 @@ public class ValueBars extends JPanel {
         }
 
         g.setColor(Color.WHITE);
+
+
 
         repaint();
     }
