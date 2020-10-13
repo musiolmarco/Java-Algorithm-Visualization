@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class AlgorithmFrame extends JFrame {
 
-    int size;
+    private int size;
 
 
     public AlgorithmFrame(int[] array, BarColor barColor){

@@ -10,7 +10,7 @@ public class AlgorithmVisualizer {
 
     private int[] array;
     private ArrayList<Integer> arrayList = new ArrayList<>();
-    private BarColor barColor;
+    BarColor barColor;
 
     public AlgorithmVisualizer() {
         array = new int[50];
@@ -66,13 +66,6 @@ public class AlgorithmVisualizer {
         }
     }
 
-    public int[] getArray() {
-        return array;
-    }
-
-    public void resetArray() {
-        fillArray();
-    }
 
     public void bubblesort(int animationSpeed) throws InterruptedException {
         int temp;
@@ -118,6 +111,15 @@ public class AlgorithmVisualizer {
             array[i] = tempValue;
         }
 
+    }
+
+
+    public int[] getArray() {
+        return array;
+    }
+
+    public void resetArray() {
+        fillArray();
     }
 
 

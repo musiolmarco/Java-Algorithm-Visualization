@@ -5,9 +5,9 @@ import java.awt.*;
 
 public class ValueBars extends JPanel {
 
-    int[] array;
-    int size;
-    BarColor barColor;
+    private int[] array;
+    private int size;
+    private BarColor barColor;
 
 
     public ValueBars(int[] array, int size, BarColor barColor){
